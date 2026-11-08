@@ -1,0 +1,4 @@
+1. Terminal in diesem Ordner öffnen
+2. python3 -m http.server 8000   (Windows: py -m http.server 8000)
+3. Im Browser öffnen: http://localhost:8000
+Nicht per Doppelklick öffnen: Browser blockieren GLB-Dateien von file://
