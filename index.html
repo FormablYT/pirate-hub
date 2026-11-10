@@ -338,6 +338,11 @@ footer{position:relative}.ft{position:relative;overflow:hidden;display:flex;just
 .wi .wt{flex:0 0 100%;display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.78rem;color:var(--mu)}.wt span{display:inline-flex;align-items:center;gap:7px}.wt .ot{width:22px;height:22px;border-radius:6px;font-size:.7rem}.wt b{color:var(--tx);font-variant-numeric:tabular-nums}
 .bdg.nxt{background:#ffffff26;color:var(--tx)}
 @media(max-width:520px){.or>.ot{width:46px;height:46px}.or{gap:8px}}
+.pc .pr .dsc{display:inline-block;margin:0 0 10px;padding:3px 12px;border-radius:99px;background:var(--g);color:#000;font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.4}
+.pc .pr b .was{display:inline;margin-left:12px;font:700 1.2rem "DM Sans",sans-serif;letter-spacing:0;color:var(--mu);text-decoration:line-through;text-shadow:none}
+.sf{display:flex;gap:14px;align-items:flex-start;text-align:left;margin:16px 0 0;padding:16px 18px;border-radius:14px;background:#38e1cf0f;border:1px solid #38e1cf33}
+.sf svg{flex:none;width:22px;height:22px;margin-top:2px;stroke:#38e1cf;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sf b{display:block;font:800 .95rem "Bricolage Grotesque",sans-serif;letter-spacing:-.01em;color:var(--tx)}.sf p{margin:4px 0 0;font-size:.84rem;line-height:1.5;color:#c9d4d3}
 </style>
 </head>
 <body>
@@ -420,8 +425,9 @@ footer{position:relative}.ft{position:relative;overflow:hidden;display:flex;just
 <p>A small Windows overlay that hears the chest sound and spots the golden flash. It counts per match and in total. The chest sound is built in.</p>
 <div id="co">
 <ol class="pst" id="pst"><li class="on"><i>1</i><span>Confirm</span></li><li><i>2</i><span>Pay</span></li><li><i>3</i><span>Download</span></li></ol>
-<div class="pc"><div><div class="pr"><b>€1.99</b><span>one-time payment in crypto · price in EUR value</span></div><div class="pm" id="pm"></div></div>
+<div class="pc"><div><div class="pr"><span class="dsc">Launch price · first 1,000 buyers</span><b>€1.99<s class="was">€3.99</s></b><span>one-time payment in crypto · price in EUR value · €3.99 after the first 1,000 buyers</span></div><div class="pm" id="pm"></div></div>
 <ul class="fe"><li>Counts per match and in total</li><li>Hears the chest sound and spots the golden flash</li><li>Chest sound is built in</li><li>Reads only audio and screen, never the game</li></ul></div>
+<div class="sf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Why not just use a free counter?</b><p>Almost all free chest counters hook into Fortnite itself (memory reading, injection, modified game files). That breaks Epic’s rules, can get your account banned, and many of them ship viruses. Chest Counter only listens to audio and watches the screen. It never touches the game.</p></div></div>
 <label class="ag" id="agl"><input type="checkbox" id="agr"><span>I agree that delivery of the digital content starts immediately and understand that I lose my right of withdrawal.</span></label>
 <button class="btn buy off" id="buy" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="4" width="15" height="3.6" rx=".7" transform="skewX(-20) translate(2.1 0)"/><rect x="4.5" y="10.4" width="15" height="3.6" rx=".7" transform="skewX(20) translate(-4.4 0)"/><rect x="4.5" y="16.4" width="15" height="3.6" rx=".7" transform="skewX(-20) translate(6.6 0)"/></svg><span>Pay with Solana Pay</span><i>→</i></button>
 <div class="trust"><span><svg viewBox="0 0 24 24"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6z"/></svg>Unlocks right after confirmation</span><span><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>No account, no login</span></div>
