@@ -354,20 +354,21 @@ footer{position:relative}.ft{position:relative;overflow:hidden;display:flex;just
 .px-tag{display:inline-flex;align-items:center;gap:8px;padding:4px 13px 4px 10px;border-radius:99px;background:#ffd4001a;border:1px solid #ffd40055;color:var(--g);font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:1.4}
 .px-tag i{width:7px;height:7px;border-radius:50%;background:var(--g);box-shadow:0 0 0 0 #ffd400aa;animation:pxp 2s ease-out infinite}
 @keyframes pxp{to{box-shadow:0 0 0 9px #ffd40000}}
-.px-row{display:flex;align-items:center;gap:16px;margin:14px 0 10px;flex-wrap:wrap}
-.px-new{font:800 clamp(3.2rem,11vw,4.6rem)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.045em;font-variant-numeric:tabular-nums;color:var(--g);background:linear-gradient(105deg,var(--g) 42%,#fff 50%,var(--g) 58%) 120% 0/260% 100% no-repeat;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 26px #ffd40044)}
+.px-row{display:flex;align-items:center;gap:14px;margin:14px 0 10px;flex-wrap:nowrap}
+.px-new{font:800 clamp(2.8rem,9vw,3.9rem)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.045em;font-variant-numeric:tabular-nums;color:var(--g);text-shadow:0 0 34px #ffd40055;white-space:nowrap}
+.px-new::after{content:none}
 .px-side{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
 .px-off{display:inline-block;padding:4px 11px;border-radius:9px;background:#ff4d4d;color:#fff;font:800 .95rem "Bricolage Grotesque",sans-serif;letter-spacing:-.01em;box-shadow:0 6px 22px #ff4d4d55}
 .px-old{position:relative;font:700 1.25rem "DM Sans",sans-serif;color:var(--mu);text-decoration:none}
 .px-old::after{content:"";position:absolute;left:-3px;right:-3px;top:52%;height:2px;border-radius:2px;background:#ff6b6b;transform-origin:left}
 .px-save{margin:0;color:var(--mu);font-size:.86rem;line-height:1.4}.px-save b{color:#6be38b}
 .px-after{margin:4px 0 0;color:var(--mu);font-size:.8rem;line-height:1.4}
-.px.go .px-new{animation:pxs 1.1s .95s var(--e) both}
+.px.go .px-new{animation:pxs 1.2s .95s ease-out both}
 .px.go .px-old::after{animation:pxd .55s .25s var(--e) both}
 .px.go .px-old{animation:pxf .5s .8s ease both}
 .px.go .px-off{animation:pxb .7s 1s cubic-bezier(.34,1.7,.5,1) both}
 .px.go .px-save{animation:pxu .6s 1.25s var(--e) both}
-@keyframes pxs{from{background-position:120% 0}to{background-position:-30% 0}}
+@keyframes pxs{0%{text-shadow:0 0 0 #ffd40000}40%{text-shadow:0 0 46px #ffd400cc,0 0 12px #fff8}100%{text-shadow:0 0 34px #ffd40055}}
 @keyframes pxd{from{transform:scaleX(0)}}
 @keyframes pxf{to{opacity:.55}}
 @keyframes pxb{0%{transform:scale(0) rotate(-14deg);opacity:0}100%{transform:scale(1) rotate(-3deg);opacity:1}}
