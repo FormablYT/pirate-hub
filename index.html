@@ -300,6 +300,44 @@ footer{position:relative}.ft{position:relative;overflow:hidden;display:flex;just
 #ok h2{margin:14px 0 0}#ok .btn{margin-top:4px;padding:18px 30px;font-size:1.05rem}
 @media(max-width:640px){.pc{grid-template-columns:1fr;padding:20px}.spg{grid-template-columns:1fr}.spi{text-align:center}.amt{align-items:center}#sp .row{justify-content:center}#sp{padding:18px}.pst li{font-size:.72rem}}
 
+
+/* Live Odds */
+.lo{display:grid;gap:14px;grid-template-columns:1fr}@media(min-width:900px){.lo{grid-template-columns:1.05fr 1fr}}
+.lo .hero,.lo .od{position:relative;overflow:hidden;border-radius:var(--r2);padding:24px;background:var(--pan);border:1px solid var(--ln);transition:border-color .5s var(--e),box-shadow .5s var(--e)}
+.lo .hero{background:radial-gradient(120% 90% at 0 0,#ffd40026,transparent 60%),var(--pan)}
+.lo.on .hero{border-color:#ffd400a6;box-shadow:0 0 0 1px #ffd40033,0 18px 60px #ffd40024}
+.lp{display:inline-flex;align-items:center;gap:8px;padding:5px 14px;font:800 .78rem "Bricolage Grotesque",sans-serif;letter-spacing:.09em;text-transform:uppercase;transform:skewX(-8deg);background:#ffffff14;color:var(--mu)}
+.lo.on .lp{background:var(--g);color:#000}.lp i{width:8px;height:8px;border-radius:50%;background:currentColor}.lo.on .lp i{animation:lpl 1.1s infinite}
+@keyframes lpl{50%{opacity:.25;transform:scale(1.7)}}@media(prefers-reduced-motion:reduce){.lo.on .lp i{animation:none}}
+.lo .src{display:inline-block;margin-left:8px;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:99px;background:#ffffff10;color:var(--mu)}.lo .src.ok{background:#22c55e22;color:#4ade80}.lo .src.nl{background:#f59e0b1f;color:#fbbf24}
+.lo .cl{margin-top:18px;font:800 .82rem "Bricolage Grotesque",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--mu)}
+.cd{font:800 clamp(2.5rem,11vw,4.4rem)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.04em;font-variant-numeric:tabular-nums;margin:8px 0}.lo.on .cd{color:var(--g)}
+.pb{height:8px;border-radius:9px;background:#ffffff14;overflow:hidden;margin:14px 0 4px}.pb i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffd400,#fff0a0);transition:width 1s linear}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.ch{padding:6px 12px;font:800 .82rem "DM Sans",sans-serif;background:var(--g);color:#000;transform:skewX(-8deg)}.ch.d{background:#ffffff12;color:var(--mu)}
+.wl{margin-top:22px;display:grid;gap:8px}.wi{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:11px 14px;border-radius:var(--r1);background:#ffffff08;font-size:.9rem}.wi.now{background:#ffd4001c;outline:1px solid #ffd40080}.wi .bdg{margin-left:auto}
+.lo .od h3{margin-bottom:14px}.or{display:flex;align-items:center;gap:10px;padding:12px 14px;margin-bottom:8px;border-radius:var(--r1);background:#ffffff08;border:1px solid transparent;transition:background .4s,border-color .4s}.or.bo{border-color:#ffd4007a;background:#ffd40014}
+.or .nm{font-weight:700;line-height:1.25}.or .nm small{display:block;font-weight:400;color:var(--mu);font-size:.75rem}.or .v{margin-left:auto;text-align:right;font:800 1.02rem "Bricolage Grotesque",sans-serif;font-variant-numeric:tabular-nums;white-space:nowrap}.or.bo .v{color:var(--g)}
+.bx{font:800 .72rem "DM Sans",sans-serif;background:var(--g);color:#000;padding:2px 8px;transform:skewX(-8deg);white-space:nowrap}.bx.d{background:#ffffff14;color:var(--mu)}
+
+.lo .hh{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.cp{width:84px;height:84px;object-fit:contain;flex:none;filter:drop-shadow(0 6px 20px #ffd40073)}.lo.on .cp{animation:cpf 3.2s ease-in-out infinite}@keyframes cpf{50%{transform:translateY(-5px) scale(1.06)}}@media(prefers-reduced-motion:reduce){.lo.on .cp{animation:none}}
+.lo .hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 40%,#ffd4001c 50%,transparent 60%);background-size:250% 100%;background-position:150% 0}.lo.on .hero::after{animation:shn 3.2s linear infinite}@keyframes shn{to{background-position:-100% 0}}
+.sk{position:absolute;bottom:-10px;width:5px;height:5px;background:var(--g);border-radius:50%;opacity:0;animation:rs 3.4s ease-in infinite;pointer-events:none;box-shadow:0 0 10px var(--g)}@keyframes rs{10%{opacity:.9}to{transform:translateY(-320px);opacity:0}}
+.hot{margin-top:18px;display:inline-block;padding:7px 14px;font:800 .9rem "Bricolage Grotesque",sans-serif;background:linear-gradient(90deg,#ff9f1c,#ffd400);color:#000;transform:skewX(-8deg);animation:hb 1.2s ease-in-out infinite}@keyframes hb{50%{transform:skewX(-8deg) scale(1.04)}}
+.cd{display:flex;gap:8px;margin:10px 0}.cd div{flex:1;max-width:96px;text-align:center;padding:12px 4px 8px;border-radius:var(--r1);background:#ffffff0d;border:1px solid var(--ln)}.cd b{display:block;font:800 clamp(2rem,9vw,3.2rem)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.04em;font-variant-numeric:tabular-nums}.cd small{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mu)}
+.lo.on .cd div{background:#ffd40018;border-color:#ffd40080;box-shadow:0 0 28px #ffd40022}.lo.on .cd b{color:var(--g);text-shadow:0 0 22px #ffd40088}.nx b{color:var(--tx)}
+.wk7{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:8px}.dc{text-align:center;padding:8px 2px;border-radius:10px;background:#ffffff08;font-size:.8rem;color:var(--mu)}.dc b{display:block}.dc small{font-size:.66rem}.dc.hot{background:#ffd40014;color:var(--tx);border:1px solid #ffd40055}.dc.td{outline:2px solid #ffffff55}.dc.lv{background:var(--g);color:#000;box-shadow:0 0 22px #ffd40088}
+.or{border-left:4px solid var(--c)}.or.bo{box-shadow:0 0 26px #ffd4001a inset}.or .nm{flex:1;min-width:0}.pr{height:5px;border-radius:5px;background:#ffffff14;margin:7px 0 2px;overflow:hidden}.pr i{display:block;height:100%;background:var(--c);border-radius:5px;transition:width .8s var(--e)}
+.or .v{display:flex;flex-direction:column;align-items:flex-end;gap:2px}.or .v s{font:400 .72rem "DM Sans",sans-serif;color:var(--mu)}.or .nm small{margin-top:2px}
+/* Live Odds: reward artwork */
+.ot{position:relative;flex:none;display:grid;place-items:center;width:60px;height:60px;border-radius:12px;overflow:hidden;background:#ffffff0d;border:1px solid #ffffff14}
+.ot img{display:block;width:100%;height:100%;object-fit:cover}.ot.ct img{object-fit:contain;padding:5px}
+.ot.q{font:800 1.5rem "Bricolage Grotesque",sans-serif;color:var(--mu);background:repeating-linear-gradient(135deg,#ffffff0d 0 6px,#ffffff05 6px 12px)}
+.ot svg{width:55%;height:55%;fill:none;stroke:var(--g);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.or.bo>.ot{border-color:#ffd40080;box-shadow:0 0 18px #ffd4002e}
+.ch{display:inline-flex;align-items:center;gap:8px}.ch .ot{width:24px;height:24px;border-radius:7px;font-size:.8rem;background:#00000026;border-color:#0000001f}.ch.d .ot{background:#ffffff0d;border-color:#ffffff14}
+.wi .wt{flex:0 0 100%;display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.78rem;color:var(--mu)}.wt span{display:inline-flex;align-items:center;gap:7px}.wt .ot{width:22px;height:22px;border-radius:6px;font-size:.7rem}.wt b{color:var(--tx);font-variant-numeric:tabular-nums}
+.bdg.nxt{background:#ffffff26;color:var(--tx)}
+@media(max-width:520px){.or>.ot{width:46px;height:46px}.or{gap:8px}}
 </style>
 </head>
 <body>
@@ -351,6 +389,7 @@ footer{position:relative}.ft{position:relative;overflow:hidden;display:flex;just
 <div class="card"><div class="cap">Token</div><div class="big g" id="tK">–</div><div class="row" style="margin-top:20px"><button class="btn gh s" id="tok">Token found</button></div></div>
 </div>
 <p class="cap" style="margin-top:16px">Typing the numbers in by hand gets old fast. The <a href="#download" style="color:var(--g)">Chest Counter for Windows</a> hears the chest and counts it for you while you play.</p>
+<div class="sec" id="loSec"><div class="sph"><div><h2>Live Odds</h2><p class="lead">Treasure Hour status, countdown and the current drop chance per chest. All times are shown in your own timezone and update automatically.</p></div></div><div class="lo" id="lo" aria-live="polite"></div></div>
 <div class="sec"><div class="sph"><div><h2>Official drop rates</h2><p class="lead">Chance per chest in a normal match, confirmed by Epic on 7 November 2026. The rates are the same all day, except during Treasure Hours. Apart from Gizmos you can’t get the same treasure twice.</p></div></div><div class="card" style="overflow-x:auto"><div id="rt"></div></div></div>
 <div class="sec"><div class="sph"><div><h2>Your odds</h2></div><div class="spx"><span class="spb">Epic’s official chance is 1 in 137,500 per chest. Pick a Treasure Hours boost.</span><div class="sp" data-m="s3" data-yaw=".3" aria-hidden="true"><canvas></canvas></div></div></div><div class="grid">
 <div class="card"><label for="n">Chests opened: <b id="nc">1,000</b></label><input id="n" type="range" min="0" max="1000" step="1" value="500"><br><br><label for="rw">Treasure</label><select id="rw" class="sel"></select><label for="o" style="display:block;margin-top:14px">Event</label><select id="o" class="sel"><option value="0">Normal match</option><option value="1">Treasure Hours</option><option value="2">Boosted round (7 Nov, 9–11 pm ET)</option></select><p class="cap" style="margin-top:10px">Official rates from Epic. Boosts can be higher in future Treasure Hours.</p><button class="btn gh s" id="toCalc" style="margin-top:14px">Use my total</button></div>
@@ -419,7 +458,7 @@ footer{position:relative}.ft{position:relative;overflow:hidden;display:flex;just
 <script>
 /* ===== SHOP: fill in here (crypto only) ===== */
 const SHOP={
- checkoutLink:"",   /* hosted crypto checkout (e.g. Coinbase Commerce / NOWPayments), redirect back to https://your-site/#danke */
+ checkoutLink:"",   /* hosted crypto checkout (e.g. Coinbase Commerce / NOWPayments), redirect back to https://your-site/#thanks */
  wallets:[          /* OR your own wallets: buyer pays, you send the download link by email */
   {coin:"Bitcoin",addr:""},{coin:"Ethereum",addr:""},{coin:"USDC (Ethereum)",addr:""}
  ],
@@ -735,6 +774,57 @@ const n=$("n"),o=$("o"),rw=$("rw"),fmt=x=>Math.round(x).toLocaleString("en-US"),
 rw.innerHTML=RW.map((r,i)=>"<option value=\""+i+"\">"+r[0].replace("&","&amp;")+": 1 in "+fmt(r[2])+"</option>").join("");
 $("rt").innerHTML="<table class=\"rt\"><thead><tr><th>Treasure</th><th>Normal</th><th>Treasure Hours</th><th>Boosted round (7 Nov)</th></tr></thead><tbody>"+RW.map(r=>"<tr><td>"+r[0].replace("&","&amp;")+"</td><td>1 in "+fmt(r[2])+"</td><td>"+(r[3][1]>1?"<b>1 in "+fmt(r[2]/r[3][1])+"</b> ("+r[3][1]+"×)":"same")+"</td><td>"+(r[3][2]>1?"<b>1 in "+fmt(r[2]/r[3][2])+"</b> ("+r[3][2]+"×)":"same")+"</td></tr>").join("")+"</tbody></table>";
 function calc(){const a=nv(),r=RW[+rw.value],k=r[3][+o.value],b=r[2]/k,p=1-Math.pow(1-1/b,a),med=Math.log(.5)/Math.log(1-1/b);$("nc").textContent=fmt(a);$("rl").textContent="Chance of at least one "+r[1];$("res").textContent=(p*100).toFixed(p<.1?2:p<.995?1:0)+" %";$("sub").textContent="At "+fmt(a)+" chests and 1 in "+fmt(b)+(k>1?" ("+k+"× boost)":"")+". Half of all players need about "+fmt(med)+" chests. In a squad, everyone’s chests add up."}n.oninput=rw.oninput=rw.onchange=o.oninput=o.onchange=calc;calc();
+/* ---------- Live Odds ---------- */
+(()=>{const FEED="treasure-hours.json",U=(d,h)=>Date.UTC(2026,10,d,h),B=[1.5,7.5,10,1,1,1,1],
+/* announced windows (UTC): Sat 8-10 PM and Sun 3-5 AM GMT+1 */
+FB=[14,21,28].flatMap(d=>[{a:U(d,19),b:U(d,21),x:B},{a:U(d+1,2),b:U(d+1,4),x:B}]),PAT=FB.slice(0,2),
+Q=new URLSearchParams(location.search).get("th");let LO={w:FB,live:false,upd:"Nov 9, 2026"},off=0,key="";
+const el=$("lo");if(!el)return;
+/* all times are shown in the visitor's own timezone */
+const dt=o=>new Intl.DateTimeFormat("en-US",o),fD=dt({weekday:"short",month:"short",day:"numeric"}),fT=dt({hour:"numeric",minute:"2-digit"}),fH=dt({hour:"numeric"}),fW=dt({weekday:"short"});
+let fZ;try{fZ=dt({timeZoneName:"shortOffset",hour:"numeric"})}catch(e){fZ=dt({timeZoneName:"short",hour:"numeric"})}
+const tz=t=>{const p=fZ.formatToParts(t).find(p=>p.type==="timeZoneName");return p?p.value:""},
+ap=s=>s.replace(/\u202f/g," "),
+rng=w=>{let a=ap(fT.format(w.a)),b=ap(fT.format(w.b));if(a.slice(-2)===b.slice(-2))a=a.slice(0,-3);return fD.format(w.a)+" · "+a+" – "+b+" "+tz(w.a)},
+sr=w=>{let a=ap(fH.format(w.a)),b=ap(fH.format(w.b));if(a.slice(-2)===b.slice(-2))a=a.slice(0,-3);return a+"–"+b},
+nf=x=>Math.round(x).toLocaleString("en-US"),bf=x=>x.toLocaleString("en-US")+"×",
+nm=n=>n.replace(/^Weekly /,"").replace("&","&amp;"),
+now=()=>Date.now()+off;
+function st(){const t=now(),ws=[...LO.w].sort((a,b)=>a.a-b.a);return{t,cw:ws.find(w=>t>=w.a&&t<w.b),nx:ws.find(w=>w.a>t),ws:ws.filter(w=>w.b>t).slice(0,6)}}
+let was=null;const COL=["#ff9f1c","#ffd400","#b44cff","#4cc3ff","#8b7bff","#34d399","#9ca3af"],DN=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+wd=t=>DN.indexOf(fW.format(t)),
+/* reward artwork: [week 1, week 2]; weeks 3+ are still secret, so they get a "?" tile */
+OI=[["tok"],["i3","i10"],["i7","i15"],["i4","i11"],["i5","i12"],["i6","i13"],null],
+OA=["Pirate Shop Access token","Weekly gold outfit","Weekly gold vehicle","Weekly pickaxe or back bling","Weekly jam track","Weekly loading screen","Gizmo"],
+GZ='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>',
+wkAt=t=>{let c=-1;WS.forEach((q,i)=>{if(t>=q)c=i});return c},
+thumb=(i,t)=>{const o=OI[i];if(!o)return`<span class="ot" title="${OA[i]}">${GZ}</span>`;
+ const k=o.length>1?o[wkAt(t)]:o[0];if(!k)return`<span class="ot q" title="${OA[i]} (revealed when the week unlocks)">?</span>`;
+ return`<span class="ot${CONTAIN.has(k)||k==="tok"||k==="i10"?" ct":""}"><img alt="${OA[i]}" src="${IMG[k]}"></span>`},
+CP='<img class="cp" alt="Pirate Shop Access token" src="'+IMG.tok+'">';
+function render(s){const on=!!s.cw,x=(s.cw||s.nx||{}).x||B.map(()=>1),f=s.cw?s.cw.x:null,t0=(s.cw||s.nx||{a:s.t}).a,
+  chips=RW.map((r,i)=>x[i]>1?`<span class="ch${on?"":" d"}">${thumb(i,t0)}${nm(r[0])} ${bf(x[i])}</span>`:"").join(""),
+  week=DN.map((n,i)=>{const p=PAT.find(w=>wd(w.a)===i);return`<div class="dc${p?" hot":""}${i===wd(s.t)?" td":""}${s.cw&&i===wd(s.cw.a)?" lv":""}"><b>${n}</b><small>${p?sr(p):"·"}</small></div>`}).join(""),
+  sk=on?[...Array(9)].map((_,i)=>`<i class="sk" style="left:${6+i*11}%;animation-delay:${(i*.7)%3}s"></i>`).join(""):"";
+  el.className="lo"+(on?" on":"");
+  el.innerHTML=`<div class="hero">${sk}<div class="hh">${CP}<div><span class="lp"><i></i>${on?"Treasure Hour live":"No Treasure Hour active"}</span><span class="src ${LO.live?"ok":"nl"}">${LO.live?"Live feed · updated "+LO.upd:"Not live · last known update: "+LO.upd}</span></div></div>
+  ${on?'<div class="hot">Boost active – open chests now!</div>':""}
+  <div class="cl" id="loCl"></div><div class="cd" id="loCd"><div><b id="cdD">00</b><small>Days</small></div><div><b id="cdH">00</b><small>Hrs</small></div><div><b id="cdM">00</b><small>Min</small></div><div><b id="cdS">00</b><small>Sec</small></div></div>
+  ${on?'<div class="pb"><i id="loPb"></i></div><div class="cap">'+rng(s.cw)+"</div>":'<p class="mu nx">'+(s.nx?"No Treasure Hour active – next window: <b>"+rng(s.nx)+"</b>":"No Treasure Hour active – no further windows announced yet.")+"</p>"}
+  ${chips?`<div class="cap" style="margin-top:16px">${on?"Active boosts":"Boosts in the next window"}</div><div class="chips">${chips}</div>`:""}
+  <div class="cap" style="margin-top:22px">Every week · ${DN[wd(PAT[0].a)]} ${sr(PAT[0])} &amp; ${DN[wd(PAT[1].a)]} ${sr(PAT[1])} (${tz(s.t)})</div><div class="wk7">${week}</div>
+  <div class="cap" style="margin-top:22px">Every Treasure Hour announced so far, in your timezone</div>
+  <div class="wl" style="margin-top:8px">${s.ws.map(w=>`<div class="wi${w===s.cw?" now":""}"><b>${rng(w)}</b><span class="bdg ${w===s.cw?"on":w===s.nx?"nxt":""}">${w===s.cw?"LIVE":w===s.nx?"NEXT":"UPCOMING"}</span><div class="wt">${RW.map((r,i)=>w.x[i]>1?`<span>${thumb(i,w.a)}${nm(r[0])} <b>${bf(w.x[i])}</b></span>`:"").join("")}</div></div>`).join("")}</div></div>
+  <div class="od"><h3>${on?"Current odds per chest":"Normal odds per chest"}</h3>${RW.map((r,i)=>{const k=f?f[i]:1,b=k>1,o=r[2]/k,w=Math.max(6,Math.min(100,100-Math.log10(o)*13)),pc=(1-Math.pow(1-1/o,S.s))*100;
+  return`<div class="or${b?" bo":""}" style="--c:${COL[i]}">${thumb(i,t0)}<div class="nm">${r[0].replace("&","&amp;")}<div class="pr"><i style="width:${w}%"></i></div>${!on&&x[i]>1?"<small>Treasure Hour: 1 in "+nf(r[2]/x[i])+" ("+bf(x[i])+")</small>":""}${S.s>0?"<small>Your chance with "+nf(S.s)+" chests: "+pc.toLocaleString("en-US",{maximumFractionDigits:pc<.1?3:1})+"%</small>":""}</div><div class="v">${b?"<span class=\"bx\">BOOST "+bf(k)+"</span><s>1 in "+nf(r[2])+"</s>":""}1 in ${nf(o)}</div></div>`}).join("")}
+  <p class="cap">${S.s>0?"":"Enter your chests above to see your personal chance here. "}Based on Epic’s official rates (7 Nov 2026). A 7.5× boost means 7.5 times the chance.</p></div>`}
+function setCd(ms){ms=Math.max(0,Math.ceil(ms/1e3));const d=ms/864e2|0,v=[d,ms%864e2/3600|0,ms%3600/60|0,ms%60],p=n=>String(n).padStart(2,"0");["cdD","cdH","cdM","cdS"].forEach((id,i)=>{const e=$(id);if(e)e.textContent=p(v[i])});const e=$("cdD");if(e)e.parentNode.style.display=d?"":"none"}
+function tick(){const s=st(),on=!!s.cw,k=(on?"a"+s.cw.a:"n"+(s.nx?s.nx.a:0))+LO.live+LO.w.length+"|"+S.s;if(k!==key){key=k;render(s);if(on&&was===false)try{FX.confetti(innerWidth/2,170,220)}catch(e){}was=on}
+ const l=$("loCl");if(!l)return;l.textContent=on?"Treasure Hour ends in":s.nx?"Treasure Hour starts in":"";setCd(on?s.cw.b-s.t:s.nx?s.nx.a-s.t:0);if(on)$("loPb").style.width=(s.t-s.cw.a)/(s.cw.b-s.cw.a)*100+"%"}
+async function feed(){try{const c=new AbortController(),tm=setTimeout(()=>c.abort(),4e3),r=await fetch(FEED,{cache:"no-store",signal:c.signal});clearTimeout(tm);if(!r.ok)throw 0;const j=await r.json(),w=j.windows.map(v=>({a:Date.parse(v.start),b:Date.parse(v.end),x:v.boost||B})).filter(v=>v.a<v.b);if(!w.length)throw 0;LO={w,live:true,upd:fD.format(Date.parse(j.updated))+" "+ap(fT.format(Date.parse(j.updated)))}}catch(e){LO.live=false}}
+if(Q){const w=[...FB].sort((a,b)=>a.a-b.a)[0];off=Q==="active"?w.a+18e5-Date.now():Q==="soon"?w.a-15e3-Date.now():Q==="end"?w.b-15e3-Date.now():0}
+tick();setInterval(tick,1e3);feed();setInterval(feed,6e4)})();
+
 function drawT(){const f=document.activeElement;if(f!==$("inS"))$("inS").value=S.s;if(f!==$("inT"))$("inT").value=S.t;$("tK").textContent=S.k?"✓":"–";$("tok").textContent=S.k?"Undo token":"Token found";save()}
 const num=v=>Math.max(0,Math.min(1e7,Math.floor(+v)||0));
 $("inS").oninput=()=>{S.s=num($("inS").value);if(S.s>S.t)S.t=S.s;drawT()};$("inT").oninput=()=>{S.t=num($("inT").value);if(S.s>S.t)S.s=S.t;drawT()};
@@ -793,7 +883,7 @@ const ern=$("ern");ern.href=SHOP.earnlab.url;$("erl").onerror=()=>{$("erl").hidd
 /* ---------- router ---------- */
 const PG=["home","counter","secret","rewards","download","map"];let cur="";const seen={};
 function ind(){const a=document.querySelector("nav a.on"),i=$("ind");if(a){i.style.width=a.offsetWidth+"px";i.style.transform=`translateX(${a.offsetLeft}px)`}}
-function route(){const h=location.hash.slice(1);if(h==="danke"){S.paid=1;save();payUI();location.replace("#download");return}const k=PG.includes(h)?h:"home";cur=k;if(route.f)BG.ripple(innerWidth/2,innerHeight*.3,.45,1.3);route.f=1;
+function route(){const h=location.hash.slice(1);if(h==="danke"||h==="thanks"){S.paid=1;save();payUI();location.replace("#download");return}const k=PG.includes(h)?h:"home";cur=k;if(route.f)BG.ripple(innerWidth/2,innerHeight*.3,.45,1.3);route.f=1;
 qa(".pg").forEach(p=>p.classList.toggle("on",p.id==="p-"+k));qa("nav a").forEach(a=>a.classList.toggle("on",a.dataset.p===k));ind();scrollTo(0,0);
 document.title=(k==="home"?"":k[0].toUpperCase()+k.slice(1)+" · ")+"Pirate Hub";
 $("mini").style.display=k==="download"?"none":"block";document.querySelector("footer").before($("mini"));
